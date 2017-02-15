@@ -2,19 +2,39 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <RelativeLayout
+<RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#484E61">
+        android:background="#484E61"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/switch_city"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/home"
+
+            />
         <TextView
             android:id="@+id/city_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:textColor="#fff"
-            android:textSize="24sp"/>
-    </RelativeLayout>
+            android:textSize="24sp"
+            />
+        <Button
+        android:id="@+id/refresh"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
 
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/refresh"/>
+    </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -43,6 +63,7 @@
                 android:layout_gravity="center_horizontal"
                 android:textColor="#FFF"
                 android:textSize="18sp"/>
+
             <TextView
                 android:id="@+id/weather_desp"
                 android:layout_width="wrap_content"
